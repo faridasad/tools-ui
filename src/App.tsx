@@ -18,26 +18,7 @@ const queryClient = new QueryClient({
 const App: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <ConfigProvider
-        theme={{
-          algorithm: theme.defaultAlgorithm,
-          token: {
-            colorPrimary: "#1677ff",
-            borderRadius: 6,
-          },
-          components: {
-            Layout: {
-              siderBg: "#001529",
-              triggerBg: "#002140",
-            },
-            Menu: {
-              darkItemBg: "#001529",
-            },
-          },
-        }}
-      >
-        <RouterProvider router={router} />
-      </ConfigProvider>
+      <RouterProvider router={router} />
     </QueryClientProvider>
   );
 };
