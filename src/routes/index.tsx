@@ -1,8 +1,23 @@
-import { createBrowserRouter } from "react-router-dom";
-import { DashboardLayout } from "../shared/layouts/dashboard-layout";
+import { createBrowserRouter, Navigate } from "react-router-dom";
+import { DashboardLayout } from "./dashboard-layout";
 import { QRCodesPage } from "../features/qr-codes/components/page";
+import { RegisterPage } from "../pages/register";
+import { LoginPage } from "../pages/login";
+import { AuthGuard } from "./auth-guard";
 
 export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Navigate to="/dashboard" replace />,
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
+  {
+    path: "/register",
+    element: <RegisterPage />,
+  },
   {
     path: "/",
     element: <DashboardLayout />,
