@@ -1,9 +1,8 @@
-// src/features/qr-codes/QRCodeList.tsx
 import React, { useState } from "react";
 import { Table, Space, Button, Popconfirm, message } from "antd";
 import { DeleteOutlined, EyeOutlined, EditOutlined } from "@ant-design/icons";
-import { IQRCode } from "../types";
-import { formatScanDate } from "../helpers";
+import { IQRCode } from "../../../features/qr-codes/types";
+import { formatScanDate } from "../../../features/qr-codes/helpers";
  import { DetailsModal } from "./details-modal";
 
 interface QRCodeListProps {

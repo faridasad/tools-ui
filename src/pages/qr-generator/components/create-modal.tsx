@@ -1,7 +1,6 @@
-// src/features/qr-codes/components/QRCodeCreateModal.tsx
 import React from "react";
 import { Modal, Form, Input, Button } from "antd";
-import { ICreateQRCode } from "../types";
+import { ICreateQRCode } from "../../../features/qr-codes/types";
 
 interface QRCodeCreateModalProps {
   visible: boolean;

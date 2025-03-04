@@ -1,7 +1,7 @@
 // src/features/qr-codes/QRCodeEditModal.tsx
 import React, { useEffect } from 'react';
 import { Modal, Form, Input } from 'antd';
-import { ICreateQRCode, IQRCode } from '../types';
+import { ICreateQRCode, IQRCode } from '../../../features/qr-codes/types';
 
 interface QRCodeEditModalProps {
   qrCode: IQRCode;

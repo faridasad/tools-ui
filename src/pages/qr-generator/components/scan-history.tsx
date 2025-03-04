@@ -1,7 +1,7 @@
 import React from "react";
 import { Table, Card, Typography } from "antd";
-import { formatScanDate } from "../helpers";
-import { useQRCodeScans } from "../service";
+import { formatScanDate } from "../../../features/qr-codes/helpers";
+import { useQRCodeScans } from "../../../features/qr-codes/service";
 
 interface QRCodeScanHistoryProps {
   shortUrl: string;

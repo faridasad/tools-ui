@@ -9,8 +9,6 @@ export const useQRCodes = () => {
   const qrCodesQuery = useQuery({
     queryKey: ["qr-codes"],
     queryFn: () => QRCodesAPI.getAll().then((res) => res.data),
-    staleTime: 0,
-    gcTime: 0,
   });
 
   const createQRCode = useMutation({

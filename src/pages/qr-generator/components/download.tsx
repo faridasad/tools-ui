@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { SERVER_BASE_URL } from "../../../config/constants";
-import { IQRCode, IQRSize } from "../types";
+import { IQRCode, IQRSize } from "../../../features/qr-codes/types";
 import { QRCodeSVG } from "qrcode.react";
 import { message } from "antd";
 

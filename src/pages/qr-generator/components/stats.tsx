@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, Row, Col, Statistic } from "antd";
 import { QrcodeOutlined, ScanOutlined, UserOutlined } from "@ant-design/icons";
-import { IQRCode } from "../types";
-import { useQRCodeScans } from "../service";
-import { calculateUniqueVisitors } from "../helpers";
+import { IQRCode } from "../../../features/qr-codes/types";
+import { useQRCodeScans } from "../../../features/qr-codes/service";
+import { calculateUniqueVisitors } from "../../../features/qr-codes/helpers";
 
 interface QRCodeStatsProps {
   qrCode: IQRCode;

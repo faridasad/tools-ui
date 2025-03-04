@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Modal, Space, Button, Dropdown, Card, Descriptions, Row, Col, Statistic, Typography, MenuProps, Table, Form, Input } from "antd";
 import { EditOutlined, QrcodeOutlined, ScanOutlined, UserOutlined, DownloadOutlined, DownOutlined, SaveOutlined } from "@ant-design/icons";
 import { QRCodeSVG } from "qrcode.react";
-import { ICreateQRCode, IQRCode } from "../types";
-import { formatScanDate } from "../helpers";
+import { ICreateQRCode, IQRCode } from "../../../features/qr-codes/types";
+import { formatScanDate } from "../../../features/qr-codes/helpers";
 import { QR_EXPORT_SIZES, SERVER_BASE_URL } from "../../../config/constants";
 import { downloadQRCode } from "./download";
 

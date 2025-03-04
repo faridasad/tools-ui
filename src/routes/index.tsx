@@ -1,9 +1,10 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import { DashboardLayout } from "./dashboard-layout";
-import { QRCodesPage } from "../features/qr-codes/components/page";
+import { QRCodesPage } from "../pages/qr-generator/page";
 import { RegisterPage } from "../pages/register";
 import { LoginPage } from "../pages/login";
 import { AuthGuard } from "./auth-guard";
+import URLShortenerPage from "../pages/url-shortener/page";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "qr-codes",
         element: <QRCodesPage />,
+      },
+      {
+        path: "urls",
+        element: <URLShortenerPage />,
       },
       {
         path: "settings",

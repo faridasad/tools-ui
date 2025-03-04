@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Layout, Menu, Button, theme, Dropdown, Avatar, Space } from "antd";
-import { DashboardOutlined, QrcodeOutlined, SettingOutlined, LogoutOutlined, UserOutlined } from "@ant-design/icons";
+import { DashboardOutlined, QrcodeOutlined, SettingOutlined, LogoutOutlined, UserOutlined, LinkOutlined } from "@ant-design/icons";
 import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { AuthAPI } from "../features/auth/api";
@@ -57,6 +57,12 @@ export const DashboardLayout: React.FC = () => {
               icon: <QrcodeOutlined />,
               label: "QR Codes",
               onClick: () => navigate("/qr-codes"),
+            },
+            {
+              key: "urls",
+              icon: <LinkOutlined />,
+              label: "URLS",
+              onClick: () => navigate("/urls"),
             },
             {
               key: "settings",
