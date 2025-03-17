@@ -12,9 +12,9 @@ export const LoginPage: React.FC = () => {
   // Get auth store methods and state
   const { login, isAuthPending } = useAuthStore();
 
-  const onFinish = (values: { email: string; password: string }) => {
+  const onFinish = async (values: { email: string; password: string }) => {
     const { email, password } = values;
-    login(email, password);
+    await login(email, password);
   };
 
   return (

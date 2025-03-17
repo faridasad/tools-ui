@@ -1,4 +1,8 @@
-export const SERVER_BASE_URL = "http://172.19.0.206:3000/api/v1/";
+import { config } from "dotenv";
+
+config();
+
+export const SERVER_BASE_URL = process.env.SERVER_BASE_URL || "http://172.19.0.206:3000/api/v1/";
 
 export const QR_EXPORT_SIZES = [
   { label: "256 x 256", value: 256 },
