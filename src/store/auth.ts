@@ -32,7 +32,7 @@ interface IAuthStore {
 const COOKIE_OPTIONS = {
   expires: 7, // 7 days
   path: "/",
-  secure: process.env.NODE_ENV === "production", // Use secure in production
+  secure: import.meta.env.NODE_ENV === "production", // Use secure in production
   sameSite: "strict"
 } as Cookies.CookieAttributes;
 
